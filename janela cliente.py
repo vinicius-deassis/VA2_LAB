@@ -12,7 +12,7 @@ file.close()
 layout = [
     [sg.Text(f'Bem vindo -usuario-!')],
     [sg.Text("Escolha um produto.")],
-    [sg.Combo(values=[stock["1"][0], stock["2"][0], stock["3"][0], stock["4"][0], stock["5"][0]], key='product', size=(27, 1))],
+    [sg.Combo(values=[stock["1"][0], stock["2"][0], stock["3"][0], stock["4"][0], stock["5"][0]], key='product', size=(27, 6))],
     [sg.Button('Ver disponibilidade')],
     [sg.Text("Qual a quantidade desejada?"), sg.Input(key='amount', size=(3, 1))],
     [sg.Button('Adicionar ao carrinho')]
