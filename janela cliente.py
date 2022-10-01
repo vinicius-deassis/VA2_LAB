@@ -40,6 +40,10 @@ while True:
             print(previous_amount)
             stock1[values['product']][0] = eq
             print(stock1[values['product']])
+            file = open('stock1.json', 'w')
+            json_writing = json.dumps(stock1)
+            file.write(json_writing)
+            file.close()
 
             #cart = {}
             #user_cart = (values['product'], values['amount'])
